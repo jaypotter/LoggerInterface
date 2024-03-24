@@ -15,4 +15,5 @@ abstract class AbstractLogger implements LoggerInterface
     abstract public function info(string $message, array $context = []): void;
     abstract public function debug(string $message, array $context = []): void;
     abstract public function log(mixed $level, string $message, array $context = []): void;
+    abstract protected function interpolate(string $message, array $context = []): string;
 }
